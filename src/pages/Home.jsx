@@ -26,7 +26,7 @@ export default function Home(){
         <div className="container">
             <div className="row">
                 <div className="home-img padd-15" id="upper-img">
-                    <img src="images/tiger.jpeg" alt=""/>
+                    <img src="images/tiger.jpg" alt=""/>
                 </div>
                 <div className="home-info padd-15">
                     <h3 className="hello">Hello, my name is <span className="name">Takeshwar Janghel</span></h3>
@@ -36,7 +36,7 @@ export default function Home(){
                     <a href="#contact" className="btn hire-me">Hire Me</a>
                 </div>
                 <div className="home-img padd-15" id="home-img">
-                    <img src="images/tiger.jpeg" alt=""/>
+                    <img src="images/tiger.jpg" alt=""/>
                 </div>
             </div>
         </div>

@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
 
 
-export default function Home() {
+export default function Home({isAsideOpen,setIsAsideOpen}) {
     return (
-        <div className="aside">
+        <div className={`aside ${isAsideOpen?"aside-open":""} `}>
             <div className="logo">
                 <a href="#"><span>T</span>akeshwar</a>
             </div>
             <div className="nav-toggler">
                 <span></span>
             </div>
-            <ul className="nav">
+            <ul onClick={()=>setIsAsideOpen(false)} className="nav">
                 <li><Link to={"/"} className="active"><i className="fa fa-home"></i>Home</Link></li>
                 <li><Link to={"/about"}><i className="fa fa-user"></i>About</Link></li>
                 <li><Link to={"/services"}><i className="fa fa-list"></i>Services</Link></li>

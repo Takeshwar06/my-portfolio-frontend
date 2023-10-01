@@ -7,6 +7,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import { useEffect, useState } from 'react';
 function App() {
+  const [isAsideOpen,setIsAsideOpen]=useState(false);
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [isThemeOpen, setIsThemeOpen] = useState(false);
   const [activeStyle,setActiveStyle]=useState("first");
@@ -35,8 +36,8 @@ setActiveStyle(color);
   return (
     <Router>
       <div onClick={()=>setIsThemeOpen(false)} className={`main-container first ${isDarkMode && "dark"}`}>
-        <Aside />
-        <div className="main-content">
+        <Aside isAsideOpen={isAsideOpen} setIsAsideOpen={setIsAsideOpen} />
+        <div onClick={()=>setIsAsideOpen(false)} className="main-content">
           <Routes>
             <Route exact path='/' element={<Home />}></Route>
             <Route exact path='/about' element={<About />}></Route>
@@ -45,6 +46,9 @@ setActiveStyle(color);
             <Route exact path='/contact' element={<Contact />}></Route>
           </Routes>
         </div>
+      </div>
+      <div onClick={()=>setIsAsideOpen(!isAsideOpen)} className='menu'>
+      <i class="fas fa-bars"></i>
       </div>
       <div className={`style-switcher ${isThemeOpen && "open"}`}>
         <div onClick={() => setIsThemeOpen(!isThemeOpen)} className="style-switcher-toggler s-icon">

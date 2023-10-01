@@ -309,7 +309,7 @@ h3.my-profession{
 .home .home-img img{
     height: 400px;
     margin: auto;
-    border-radius: 5px;
+    border-radius: 15px;
 }
 
 /* About */
@@ -641,10 +641,52 @@ h3.my-profession{
     padding: 0 50px;
 }
 
+.menu{
+    display: none;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    top: 0;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 50%; 
+    margin-right: 24px;
+    margin-top: 4px;
+    color: var(--text-black-900);
+    border: 1px solid var(--bg-black-50);
+    background: var(--bg-black-100);
+}
+.aside.aside-open{
+    z-index: 5;
+    transition: all 0.3s ease;
+    transform: translateX(0%);
+}
 /* media query */
 @media (max-width:1199px){
     .aside{
-        left: -270px;
+        /* left: -270px; */
+        z-index: 5;
+        transition: all 0.3s ease;
+        transform: translateX(-100%);
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        position: fixed;
+        right: 0;
+        font-size: 20px;
+        top: 0;
+        border: 1px solid var(--bg-black-50);
+        border-radius: 50%; 
+        margin-right: 24px;
+        margin-top: 4px;
+        color: var(--text-black-900);
+        border: 1px solid var(--bg-black-50);
+        background: var(--bg-black-100);
     }
     .main-content{
         padding-left: 0;
