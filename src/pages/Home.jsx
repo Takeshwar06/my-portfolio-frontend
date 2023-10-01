@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import Typed from 'typed.js';
 
 export default function Home(){
@@ -33,7 +34,7 @@ export default function Home(){
                     <h3 className="my-profession">I' m a <span ref={typedRef} className="typing">full stack devloper</span> </h3>
                     <p>I'm a full stack devloper with extensive expresif Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Harum laborum nostrum repudiandae more...</p>
-                    <a href="#contact" className="btn hire-me">Hire Me</a>
+                    <Link to={"#takeshwarverma124@gmail.com"} className="btn hire-me">Hire Me</Link>
                 </div>
                 <div className="home-img padd-15" id="home-img">
                     <img src="images/tiger.jpg" alt=""/>
