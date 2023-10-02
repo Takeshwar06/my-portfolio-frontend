@@ -7,7 +7,7 @@ export default function Home({isAsideOpen,setIsAsideOpen}) {
     return (
         <div className={`aside ${isAsideOpen?"aside-open":""} `}>
             <div className="logo">
-                <a href="#"><span>T</span>akeshwar</a>
+                <Link href="#"><span>T</span>akeshwar</Link>
             </div>
             <div className="nav-toggler">
                 <span></span>
@@ -17,8 +17,8 @@ export default function Home({isAsideOpen,setIsAsideOpen}) {
                 <li><Link to={"/about"} className={location.pathname==="/about"?"active":""}><i className="fa fa-user"></i>About</Link></li>
                 <li><Link to={"/services"} className={location.pathname==="/services"?"active":""}><i className="fa fa-list"></i>Services</Link></li>
                 <li><Link to={"/portfolio"} className={location.pathname==="/portfolio"?"active":""}><i className="fa fa-briefcase"></i>Portfolio</Link></li>
-                <li><Link to={"/portfolio"} className={location.pathname==="/portfolio"?"active":""}><i className="fa fa-briefcase"></i>Portfolio</Link></li>
-                <li><Link to={"contact"} className={location.pathname==="/contact"?"active":""}><i className="fa fa-comments"></i>Contact</Link></li>
+                <li><Link to={"/skills"} className={location.pathname==="/skills"?"active":""}><i className="fa fa-briefcase"></i>Skills</Link></li>
+                <li><Link to={"/contact"} className={location.pathname==="/contact"?"active":""}><i className="fa fa-comments"></i>Contact</Link></li>
             </ul>
         </div>
     )

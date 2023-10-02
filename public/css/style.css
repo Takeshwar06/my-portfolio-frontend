@@ -51,6 +51,11 @@ ul{
 .hidden{
     display: none !important;
 }
+.blur{
+    background-color: rgba(255, 255, 255, 0.8); /* Set a background color with some transparency */
+    backdrop-filter: blur(10px); /* Apply a blur effect */
+    pointer-events: none; /* Make the div non-interactive */
+  }
 .section{
     background: var(--bg-black-900);
     min-height: 100vh;
@@ -563,8 +568,12 @@ h3.my-profession{
 .portfolio .portfolio-item-inner .portfolio-img img{
     width: 100%;
     display: block;
+    transition: all 0.3s ease;
 }
-
+.portfolio .portfolio-item-inner .portfolio-img img:hover{
+    transform: scale(1.10);
+    cursor: pointer;
+}
 /* Contatct Me */
 .contact-title{
     color: var(--skin-color);
@@ -662,6 +671,146 @@ h3.my-profession{
     transition: all 0.3s ease;
     transform: translateX(0%);
 }
+
+
+/* changing for new feture */
+.skill-logo{
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    background-color: rebeccapurple;
+    overflow: hidden;
+}
+.skill-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.skill-btn{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 19px;
+    background: var(--skin-color);
+    color: white;
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 40px;
+    border: none;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+.skill-btn:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* img fixed height */
+.heightfix{
+    height: 214px;
+}
+
+/* popup */
+.popup .img-btn{
+     position: absolute;   
+     right: 50px;
+     top: 26px;
+     z-index:2000;
+     border-radius: 50%;
+     width: 60px;
+     height: 60px;
+     background: transparent;
+     color: white;
+     border: 1px solid var(--text-black-700);
+     font-weight: bold;
+     font-size: 34px;
+     transition: all 0.3s ease;
+}
+.popup .img-btn:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    color: var(--skin-color);
+    border: 1px solid var(--skin-color);
+}
+/* next button */
+.next-btn{
+  position: absolute;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  background:transparent;
+  border-radius: 50%;
+  border: 1px solid var(--text-black-700);
+  font-size: 34px;
+  color:white;
+  transition: all 0.3s ease;
+}
+.next-btn:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+   color: var(--skin-color);
+   border:1px solid var(--skin-color);
+}
+.popup{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 30000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
+    background: var(--bg-black-100);
+}
+.popup .inner{
+    flex: 0 0 50%;
+    max-width: 50%;
+    /* margin-bottom: 30px; */
+}
+.popup .inner .inner-inner{
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup .inner .inner-inner img{
+    width: 100%;
+    display: block;
+    transition: all 0.3s ease;
+}
+/* admin */
+
+.admin-input{
+    width: 70%;
+    height: 50px;
+    padding: 23px;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 5px;
+    color: var(--text-black-700);
+    margin-bottom: 25px;
+}
+.admin-choices{
+    width: 70%;
+    display: flex;
+    align-items: center; 
+    flex-wrap: wrap;
+    color: var(--text-black-700);
+    margin-bottom: 25px;
+}
+.admin-choices input{
+   margin-left: 23px;
+   width: 23px;
+   margin-bottom: 23px;
+   cursor: pointer;
+   height: 23px;
+}
 /* media query */
 @media (max-width:1199px){
     .aside{
@@ -688,6 +837,7 @@ h3.my-profession{
         border: 1px solid var(--bg-black-50);
         background: var(--bg-black-100);
     }
+   
     .main-content{
         padding-left: 0;
     }
@@ -728,5 +878,26 @@ h3.my-profession{
     .about .about-content .personal-info{
         flex: 0 0 100%;
         max-width: 100%;
+    }
+    .heightfix{
+        height: 100%;
+    }
+   
+}
+
+@media (max-width: 760px) {
+    .heightfix{
+        height: 100%;
+    }
+    .popup .inner{
+        flex: 0 0 100%;
+        max-width: 100%;
+        /* margin-bottom: 30px; */
+    }
+    .next-btn{
+        right: 0;
+    }
+    .popup .img-btn{
+        right: 0;
     }
 }
