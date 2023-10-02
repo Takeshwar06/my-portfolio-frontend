@@ -804,13 +804,13 @@ h3.my-profession{
     color: var(--text-black-700);
     margin-bottom: 25px;
 }
-/* .admin-choices input{
+.admin-choices input{
    margin-left: 23px;
    width: 23px;
    margin-bottom: 23px;
    cursor: pointer;
    height: 23px;
-} */
+}
 /* media query */
 @media (max-width:1199px){
     .aside{
