@@ -7,6 +7,7 @@ import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import { host } from './utils/ApiRoute';
 import Admin from './pages/Admin';
 function App() {
   const [isAsideOpen, setIsAsideOpen] = useState(false);
@@ -15,6 +16,7 @@ function App() {
   const [activeStyle, setActiveStyle] = useState("seccond");
 
   useEffect(() => {
+    userEntry();
     const handleScroll = () => {
       if (isThemeOpen === true) {
         setIsThemeOpen(false);
@@ -26,6 +28,7 @@ function App() {
     //   window.removeEventListener('scroll', handleScroll);
     // };
   }, []);
+
   const themeToggler = (color) => {
     document.querySelector(".main-container").classList.remove('first')
     document.querySelector(".main-container").classList.remove('seccond')
@@ -34,6 +37,16 @@ function App() {
     document.querySelector(".main-container").classList.remove('fifth')
     document.querySelector(".main-container").classList.add(color)
     setActiveStyle(color);
+  }
+
+  const userEntry=async()=>{
+    if(!localStorage.getItem("viewer_id_entry_id")){
+      const id=Math.floor(Math.random() * 10000000000);
+      localStorage.setItem("viewer_id_entry_id",id);
+       await axios.post(`${host}/api/viewer/addviewer`,{
+        viewer:id
+      })
+    }
   }
   return (
     <Router>
@@ -60,7 +73,7 @@ function App() {
         </div>
       </div>
       <div onClick={() => setIsAsideOpen(!isAsideOpen)} className='menu'>
-        <i class="fas fa-bars"></i>
+        <i className="fas fa-bars"></i>
       </div>
       <div className={`style-switcher ${isThemeOpen && "open"}`}>
         <div onClick={() => setIsThemeOpen(!isThemeOpen)} className="style-switcher-toggler s-icon">

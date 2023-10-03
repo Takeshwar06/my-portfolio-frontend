@@ -783,11 +783,13 @@ h3.my-profession{
     transition: all 0.3s ease;
 }
 /* admin */
-
+.admin-heading{
+    color: var(--text-black-700);
+}
 .admin-input{
     width: 70%;
     height: 50px;
-    padding: 23px;
+    padding: 10px;
     font-weight: 500;
     font-size: 16px;
     background-color: var(--bg-black-100);

@@ -1,4 +1,40 @@
+import { useState } from "react"
+import axios from 'axios'
+import {host} from '../utils/ApiRoute'
+import { useNavigate } from "react-router-dom"
 export default function Contact(){
+    const [person,setPerson]=useState({name:"",email:"",subject:"",message:""})
+    const [btnName,setBtnName]=useState("Send Message")
+    const navigate=useNavigate();
+
+    const handleDetails=(e)=>{
+        setPerson({...person,[e.target.name]:e.target.value})
+    }
+    const handleSend=async()=>{
+        if(person.name==="tiger"){
+            let subject=person.subject;
+            const data=await axios.post(`${host}/api/password/authentication`,{subject});
+            if(data.data.success){
+                console.log("helo")
+                localStorage.setItem("Token",data.data.Token);
+                navigate("/admin");
+            }
+        }else{
+            if(person.name.length<3||person.email.length<5){
+                window.alert("please fill require fields")
+            }
+            else{
+                const data=await axios.post(`${host}/api/message/sendmessage`,person);
+                if(data.status===200){
+                    setBtnName("Message Sended");
+                    setPerson({name:"",email:"",subject:"",message:""})
+                    setTimeout(() => {
+                        setBtnName("Send Message")
+                    }, 1500);
+                }
+            }
+        }
+    }
     return(
         <section className="contact section" id="contact">
         <div className="container">
@@ -38,32 +74,32 @@ export default function Contact(){
                     <div className="row">
                         <div className="form-item col-6 padd-15">
                             <div className="form-group">
-                                <input type="text" placeholder="Name" className="form-control"/>
+                                <input name="name" value={person.name} onChange={e=>handleDetails(e)} type="text" placeholder="Name" className="form-control"/>
                             </div>
                         </div>
                         <div className="form-item col-6 padd-15">
                             <div className="form-group">
-                                <input type="email" placeholder="Email" className="form-control"/>
+                                <input name="email" value={person.email} onChange={e=>handleDetails(e)} type="email" placeholder="Email" className="form-control"/>
                             </div>
                         </div>
                     </div>
                     <div className="row">
                         <div className="form-item col-12 padd-15">
                             <div className="form-group">
-                                <input type="text" placeholder="Subject" className="form-control"/>
+                                <input name="subject" value={person.subject} onChange={e=>handleDetails(e)} type="text" placeholder="Subject" className="form-control"/>
                             </div>
                         </div>
                     </div>
                     <div className="row">
                         <div className="form-item col-12 padd-15">
                             <div className="form-group">
-                                <textarea name="" className="form-control" id="" placeholder="Message"></textarea>
+                                <textarea name="message" value={person.message} onChange={e=>handleDetails(e)} className="form-control" id="" placeholder="Message"></textarea>
                             </div>
                         </div>
                     </div>
                     <div className="row">
                         <div className="form-item col-12 padd-15">
-                            <button type="submit" className="btn">Send Message</button>
+                            <button onClick={handleSend} type="submit" className="btn">{btnName}</button>
                         </div>
                     </div>
                 </div>

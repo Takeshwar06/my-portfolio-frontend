@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 
 export default function Home({isAsideOpen,setIsAsideOpen}) {
     const location= useLocation();
-    console.log(location);
     return (
         <div className={`aside ${isAsideOpen?"aside-open":""} `}>
             <div className="logo">
