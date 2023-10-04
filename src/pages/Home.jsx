@@ -33,7 +33,7 @@ export default function Home(){
                     <h3 className="hello">Hello, my name is <span className="name">Takeshwar Janghel</span></h3>
                     <h3 className="my-profession">I' m a <span ref={typedRef} className="typing">full stack devloper</span> </h3>
                     <p>I'm Takeshwar, a B.Tech student who loves to code and create. I specialize in full-stack development,  where I transform ideas into  applications by mastering both front-end and back-end technologies, Coding isn't just a skill for me; it's a passion. </p>
-                    <Link to={"#takeshwarverma124@gmail.com"} className="btn hire-me">Hire Me</Link>
+                    <Link to={"mailto:Takeshwarverma124@gmail.com"}className="btn hire-me">Hire Me</Link>
                 </div>
                 <div className="home-img padd-15" id="home-img">
                     <img src="images/tiger.jpg" alt=""/>

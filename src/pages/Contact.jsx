@@ -67,10 +67,10 @@ export default function Contact() {
                         {/* <p>Takeshwarverma124@gmail.com</p> */}
                     </div>
                     <div className="contact-info-item padd-15">
-                        <Link to={`${window.location.origin}`}>
-                            <div className="icon"><i className="fa fa-globe-europe"></i></div>
+                        <Link to={"https://github.com/Takeshwar06"} target="_blank">
+                            <div className="icon"><i class="fa fa-brands fa-github"></i></div>
                         </Link>
-                        <h4>Website</h4>
+                        <h4>GitHube</h4>
                         {/* <p>Takeshwarverma124@gmail.com</p> */}
                     </div>
                 </div>

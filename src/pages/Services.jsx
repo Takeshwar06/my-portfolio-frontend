@@ -36,19 +36,19 @@ export default function Services(){
      else if(location.pathname==="/code"){
         // fetch data from backend
         const data=[
-            {logo:"/images/coding/c.png",name:"C",navigation:"/code",about:"C is my primary language, with six months' experience, solid foundations, and strong problem-solving skills."},
-            {logo:"/images/coding/cpp.png",name:"C++",navigation:"/drawing",about:"Proficient in C++ with a focus on object-oriented design, data structures, and performance optimization."},
-            {logo:"/images/coding/java.png",name:"JAVA",navigation:"/sketch",about:"Basic knowledge of Java, familiar with syntax and fundamental concepts for entry-level programming tasks."},
-            {logo:"/images/coding/javaScript.png",name:"JAVASRIPT",navigation:"/certificate",about:" Skilled in JavaScript, adept at creating interactive web applications, and using modern frameworks like React."},
-            {logo:"/images/coding/css.png",name:"CSS",navigation:"/dance",about:"Proficient in CSS, styling web content for a visually appealing and responsive user experience."},
-            {logo:"/images/coding/html.png",name:"HTML",navigation:"#",about:" Experienced in HTML, creating structured and semantic web pages for modern web development."},
-            {logo:"/images/coding/python.png",name:"PYTHON",navigation:"#",about:"Basic knowledge of Python, understanding syntax and fundamental concepts for introductory programming assignments."},
+            {logo:"/images/coding/solving.png",name:"PROBLEM SOLVING",navigation:"#",about:" Strong problem-solving skills, employing algorithms and data structures to solve complex challenges."},
             {logo:"/images/coding/react.png",name:"REACT.JS",navigation:"#",about:" Proficient in React.js, creating responsive and dynamic user interfaces for web applications."},
-            {logo:"/images/coding/react.png",name:"REACT NATIVE",navigation:"#",about:" Skilled in React Native, developing cross-platform mobile apps with native-like performance."},
             {logo:"/images/coding/node.png",name:"NODE.JS",navigation:"#",about:"Proficient in Node.js for server-side development, building scalable and high-performance applications"},
             {logo:"/images/coding/mongo.png",name:"MONGODB",navigation:"#",about:" Knowledgeable in MongoDB, designing and managing NoSQL databases for scalable applications."},
             {logo:"/images/coding/api.png",name:"REST FULL API",navigation:"#",about:"RESTful API design and implementation expert for efficient web data exchange and communication."},
-            {logo:"/images/coding/solving.png",name:"PROBLEM SOLVING",navigation:"#",about:" Strong problem-solving skills, employing algorithms and data structures to solve complex challenges."},
+            {logo:"/images/coding/javaScript.png",name:"JAVASRIPT",navigation:"/certificate",about:" Skilled in JavaScript, adept at creating interactive web applications, and using modern frameworks like React."},
+            {logo:"/images/coding/react.png",name:"REACT NATIVE",navigation:"#",about:" Skilled in React Native, developing cross-platform mobile apps with native-like performance."},
+            {logo:"/images/coding/java.png",name:"JAVA",navigation:"/sketch",about:"Basic knowledge of Java, familiar with syntax and fundamental concepts for entry-level programming tasks."},
+            {logo:"/images/coding/c.png",name:"C",navigation:"/code",about:"C is my primary language, with six months' experience, solid foundations, and strong problem-solving skills."},
+            {logo:"/images/coding/cpp.png",name:"C++",navigation:"/drawing",about:"Proficient in C++ with a focus on object-oriented design, data structures, and performance optimization."},
+            {logo:"/images/coding/python.png",name:"PYTHON",navigation:"#",about:"Basic knowledge of Python, understanding syntax and fundamental concepts for introductory programming assignments."},
+            {logo:"/images/coding/css.png",name:"CSS",navigation:"/dance",about:"Proficient in CSS, styling web content for a visually appealing and responsive user experience."},
+            {logo:"/images/coding/html.png",name:"HTML",navigation:"#",about:" Experienced in HTML, creating structured and semantic web pages for modern web development."},
         ]
         setCode(data);
      }

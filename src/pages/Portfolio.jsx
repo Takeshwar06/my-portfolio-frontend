@@ -15,12 +15,12 @@ export default function Portfolio() {
         if (location.pathname === "/portfolio") {
             // fetch data from backend
             const data = [
-                { img: "images/uuu.jpg", url: "https://www.google.com" },
-                { img: "images/portfolio.jpg", url: "https://www.google.com" },
-                { img: "images/portfolio.jpg", url: "https://www.google.com" },
-                { img: "images/portfolio.jpg", url: "https://www.google.com" },
-                { img: "images/portfolio.jpg", url: "https://www.google.com" },
-                { img: "images/portfolio.jpg", url: "https://www.google.com" },
+                { img: "images/portfolio.jpg", url: "#project" },
+                { img: "images/portfolio.jpg", url: "#project" },
+                { img: "images/portfolio.jpg", url: "#project" },
+                { img: "images/portfolio.jpg", url: "#project" },
+                { img: "images/portfolio.jpg", url: "#project" },
+                { img: "images/portfolio.jpg", url: "#project" },
             ]
             setPortfolio(data);
         }
@@ -28,12 +28,16 @@ export default function Portfolio() {
         else if (location.pathname === "/drawing") {
             //fetch data from backend
             const data = [
-                { img: "images/uuu.jpg" },
-                { img: "images/uuu.jpg" },
-                { img: "images/uuu.jpg" },
-                { img: "images/uuu.jpg" },
-                { img: "images/uuu.jpg" },
-                { img: "images/uuu.jpg" },
+                { img: "images/drawing/drawing (3).jpg" },
+                { img: "images/drawing/drawing (10).jpg" },
+                { img: "images/drawing/drawing (6).jpg" },
+                { img: "images/drawing/drawing (7).jpg" },
+                { img: "images/drawing/drawing (2).jpg" },
+                { img: "images/drawing/drawing (4).jpg" },
+                { img: "images/drawing/drawing (5).jpg" },
+                { img: "images/drawing/drawing (8).jpg" },
+                { img: "images/drawing/drawing (9).jpg" },
+                
             ]
             setDrawing(data);
         }
@@ -41,12 +45,22 @@ export default function Portfolio() {
         else if (location.pathname === "/sketch") {
             //fetch data from backend
             const data = [
-                { img: "images/uuu.jpg" },
-                { img: "images/uuu.jpg" },
-                { img: "images/uuu.jpg" },
-                { img: "images/uuu.jpg" },
-                { img: "images/uuu.jpg" },
-                { img: "images/uuu.jpg" },
+                { img: "images/sketch/sketch (10).jpg" },
+                { img: "images/sketch/sketch (1).jpg" },
+                { img: "images/sketch/sketch (13).jpg" },
+                { img: "images/sketch/sketch (11).jpg" },
+                { img: "images/sketch/sketch (2).jpg" },
+                { img: "images/sketch/sketch (3).jpg" },
+                { img: "images/sketch/sketch (4).jpg" },
+                { img: "images/sketch/sketch (6).jpg" },
+                { img: "images/sketch/sketch (7).jpg" },
+                { img: "images/sketch/sketch (8).jpg" },
+                { img: "images/sketch/sketch (12).jpg" },
+                { img: "images/sketch/sketch (16).jpg" },
+                { img: "images/sketch/sketch (5).jpg" },
+                { img: "images/sketch/sketch (17).jpg" },
+                { img: "images/sketch/sketch (18).jpg" },
+                { img: "images/sketch/sketch (9).jpg" },
             ]
             setSketch(data);
         }
@@ -65,12 +79,15 @@ export default function Portfolio() {
         else if (location.pathname === "/certificate") {
             //fetch data from backend
             const data = [
-                { img: "images/uuu.jpg" },
-                { img: "images/uuu.jpg" },
-                { img: "images/uuu.jpg" },
-                { img: "images/uuu.jpg" },
-                { img: "images/uuu.jpg" },
-                { img: "images/uuu.jpg" },
+                { img: "images/certificate/certificate (1).jpg" },
+                { img: "images/certificate/certificate (2).jpg" },
+                { img: "images/certificate/certificate (3).jpg" },
+                { img: "images/certificate/certificate (4).jpg" },
+                { img: "images/certificate/certificate (8).jpg" },
+                { img: "images/certificate/certificate (9).jpg" },
+                { img: "images/certificate/certificate (5).jpg" },
+                { img: "images/certificate/certificate (6).jpg" },
+                { img: "images/certificate/certificate (7).jpg" },
             ]
             setCertificate(data);
         }
@@ -94,7 +111,7 @@ export default function Portfolio() {
                 <div className="row">
                     <div className="portfolio-heading padd-15">
                         <h2>My &nbsp;
-                            {location.pathname === "/portfolio" && "Last Project"}
+                            {location.pathname === "/portfolio" && "Last Project Padding to add"}
                             {location.pathname === "/drawing" && "Drawing"}
                             {location.pathname === "/sketch" && "Sketch"}
                             {location.pathname === "/dance" && "Dance"}
