@@ -1,5 +1,5 @@
 
-
+import { Link } from "react-router-dom"
 export default function About(){
     return(
         <section className="about section " id="about">
@@ -14,13 +14,8 @@ export default function About(){
                     <div className="row">
                         <div className="about-text padd-15">
                             <h3>I'm Takeshwar and <span>Full stack devloper</span> </h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur assumenda
-                                optio officia deserunt explicabo cum, quasi voluptatum autem quod vero qui
-                                aliquid, quis nam architecto excepturi inventore voluptatibus. Neque impedit
-                                alias magni deserunt at praesentium quisquam doloremque enim, corrupti ipsum hic
-                                ipsa quos culpa, recusandae qui asperiores repudiandae eos quae error. Quod
-                                praesentium quasi enim.</p>
-
+                            <p>Coding isn't just a skill for me; it's my passion. I enjoy solving problems, whether it's fixing code issues or finding creative solutions to real-world challenges. Besides coding, I have a talent for sketching, adding an artistic touch to my creative journey.</p>
+                             <p>Explore my portfolio, where technology and art come together to shape a brighter future. Join me on this adventure, and let's make something amazing together.</p>
                         </div>
                     </div>
                      <div className="row">
@@ -36,13 +31,13 @@ export default function About(){
                                     <p>Website : <span>www.tiger.com</span></p>
                                 </div>
                                 <div className="info-item padd-15">
-                                    <p>Email : <span>tiger@gmail.com</span></p>
+                                    <p>Email : <span>Takeshwarverma124@gmail.com</span></p>
                                 </div>
                                 <div className="info-item padd-15">
-                                    <p>Degree : <span>Btech cse</span></p>
+                                    <p>Degree : <span>Btech CSE</span></p>
                                 </div>
                                 <div className="info-item padd-15">
-                                    <p>Phone : <span>6266009988</span></p>
+                                    <p>Phone : <span>62678*****</span></p>
                                 </div>
                                 <div className="info-item padd-15">
                                     <p>City : <span>Bhilai</span></p>
@@ -53,8 +48,8 @@ export default function About(){
                             </div>
                             <div className="row">
                                 <div className="buttons padd-15">
-                                    <a href="#" className="btn">Download CV</a>
-                                    <a href="#contact" className="btn hire-me">Hire Me</a>
+                                    <Link target="_blank" download to={`${window.location.origin}/resume/takeshwarResume.pdf`} className="btn">Download CV</Link>
+                                    <Link target="_blank" to="https://instagram.com/takeshwar_janghel?igshid=OGQ5ZDc2ODk2ZA==" className="btn hire-me">Hire Me</Link>
                                 </div>
                             </div>
                         </div>

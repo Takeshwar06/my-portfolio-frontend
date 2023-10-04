@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom"
 
 export default function MessageItem({item}){
-    console.log(item);
     const navigate=useNavigate();
     return(
         <div className="service-item padd-15">

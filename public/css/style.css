@@ -679,9 +679,13 @@ h3.my-profession{
     width: 85px;
     border-radius: 50%;
     display: block;
-    margin: 0 auto 30px;
-    background-color: rebeccapurple;
+    margin: 0 auto 18px;
+    background-color:var(--bg-black-100);
     overflow: hidden;
+    border: 0.2px solid var(--bg-black-50);
+}
+.service-item:hover .skill-logo{
+    background-color: var(--bg-black-50);
 }
 .skill-logo img{
     width: 100%;
