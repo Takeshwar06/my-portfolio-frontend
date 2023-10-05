@@ -41,7 +41,7 @@ export default function Services(){
             {logo:"/images/coding/node.png",name:"NODE.JS",navigation:"#",about:"Proficient in Node.js for server-side development, building scalable and high-performance applications"},
             {logo:"/images/coding/mongo.png",name:"MONGODB",navigation:"#",about:" Knowledgeable in MongoDB, designing and managing NoSQL databases for scalable applications."},
             {logo:"/images/coding/api.png",name:"REST FULL API",navigation:"#",about:"RESTful API design and implementation expert for efficient web data exchange and communication."},
-            {logo:"/images/coding/javaScript.png",name:"JAVASRIPT",navigation:"/certificate",about:" Skilled in JavaScript, adept at creating interactive web applications, and using modern frameworks like React."},
+            {logo:"/images/coding/javascript.png",name:"JAVASRIPT",navigation:"/certificate",about:" Skilled in JavaScript, adept at creating interactive web applications, and using modern frameworks like React."},
             {logo:"/images/coding/react.png",name:"REACT NATIVE",navigation:"#",about:" Skilled in React Native, developing cross-platform mobile apps with native-like performance."},
             {logo:"/images/coding/java.png",name:"JAVA",navigation:"/sketch",about:"Basic knowledge of Java, familiar with syntax and fundamental concepts for entry-level programming tasks."},
             {logo:"/images/coding/c.png",name:"C",navigation:"/code",about:"C is my primary language, with six months' experience, solid foundations, and strong problem-solving skills."},
