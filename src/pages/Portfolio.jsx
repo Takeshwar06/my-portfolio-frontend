@@ -67,12 +67,10 @@ export default function Portfolio() {
         else if (location.pathname === "/dance") {
             //fetch data from backend
             const data = [
-                { video: "images/uuu.jpg" },
-                { video: "images/uuu.jpg" },
-                { video: "images/uuu.jpg" },
-                { video: "images/uuu.jpg" },
-                { video: "images/uuu.jpg" },
-                { video: "images/uuu.jpg" },
+                { videoUrl: "https://res.cloudinary.com/do3fiil0d/video/upload/v1696514576/portfolio/dance_-_Trim2_mixr8p.mp4" },
+                { videoUrl: "https://res.cloudinary.com/do3fiil0d/video/upload/v1696514534/portfolio/km_20220711_1080p_bcasqb.3gp" },
+                { videoUrl: "https://res.cloudinary.com/do3fiil0d/video/upload/v1696514523/portfolio/ins_1696513335640_x6og10.mp4" },
+                { videoUrl: "https://res.cloudinary.com/do3fiil0d/video/upload/v1696514499/portfolio/dance_-_Trim_zh0ny3.mp4" },
             ]
             setDance(data);
         }
