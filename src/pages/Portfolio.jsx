@@ -79,11 +79,11 @@ export default function Portfolio() {
         else if (location.pathname === "/certificate") {
             //fetch data from backend
             const data = [
-                { img: "images/certificate/certificate (1).jpg" },
+                { img: "images/certificate/certificate (4).jpg" },
                 { img: "images/certificate/certificate (2).jpg" },
                 { img: "images/certificate/certificate (3).jpg" },
-                { img: "images/certificate/certificate (4).jpg" },
                 { img: "images/certificate/certificate (8).jpg" },
+                { img: "images/certificate/certificate (1).jpg" },
                 { img: "images/certificate/certificate (9).jpg" },
                 { img: "images/certificate/certificate (5).jpg" },
                 { img: "images/certificate/certificate (6).jpg" },

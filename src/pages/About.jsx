@@ -101,7 +101,7 @@ export default function About() {
                                                 <p className="timeline-text"><span><i class="fa-solid fa-circle-dot"></i></span>Bachelor of Technology (BTech) in Computer Science</p>
                                                 <p className="timeline-text"><span><i class="fa-solid fa-circle-dot"></i></span>Rungta College Of Engineering & Technology, Bhilai</p>
                                                 <p className="timeline-text"><span><i class="fa-solid fa-circle-dot"></i></span>Graduation Year: 2025</p>
-                                                <p className="timeline-text"><span><i class="fa-solid fa-circle-dot"></i></span>College GPA: [Your College GPA, if applicable]</p>
+                                                <p className="timeline-text"><span><i class="fa-solid fa-circle-dot"></i></span>College GPA: sem1-81%, sem2-86%, sem3-71%</p>
                                             </div>
                                             <div className="timeline-item">
                                                 <div className="circle-dot"></div>

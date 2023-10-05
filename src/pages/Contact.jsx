@@ -23,14 +23,16 @@ export default function Contact() {
                 window.alert("please fill require fields")
             }
             else {
-                const data = await axios.post(`${host}/api/message/sendmessage`, person);
+                console.log("gya")
+               const data = await axios.post(`${host}/api/message/sendmessage`, person);
+                console.log(data);
                 if (data.status === 200) {
                     setBtnName("Message Sended");
                     setPerson({ name: "", email: "", subject: "", message: "" })
                     setTimeout(() => {
                         setBtnName("Send Message")
                     }, 1500);
-                }
+                } 
             }
         }
     }
