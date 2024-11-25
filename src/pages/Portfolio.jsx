@@ -16,6 +16,34 @@ export default function Portfolio() {
       // fetch data from backend
       const data = [
         {
+          img: "images/portfolio/grozzoapp.png",
+          githubUrl: "https://github.com/Takeshwar06/canteen-web",
+          liveUrl: "/apk/grozzo.apk",
+          download: true,
+        },
+        {
+          img: "images/portfolio/smartcanteenapp.png",
+          githubUrl: "https://github.com/Takeshwar06/canteen-native-app",
+          liveUrl: "/apk/smartcanteen.apk",
+          download: true,
+        },
+        {
+          img: "images/portfolio/grozzoweb.png",
+          githubUrl: "https://github.com/Takeshwar06",
+          liveUrl: "https://grozzo-admin-frontend.vercel.app",
+        },
+
+        {
+          img: "images/portfolio/smartcanteenweb.png",
+          githubUrl: "https://github.com/Takeshwar06/canteen-web",
+          liveUrl: "https://smartcanteen.onrender.com",
+        },
+        {
+          img: "images/portfolio/mybillingsystem.png",
+          githubUrl: "https://github.com/Takeshwar06/billing-system",
+          liveUrl: "https://billingsystem-seven.vercel.app",
+        },
+        {
           img: "images/portfolio/shadi.png",
           githubUrl: "https://github.com/Takeshwar06/Shaadi-Image-Hub-ui-ux",
           liveUrl: "https://shaadi-image-hub.onrender.com",
@@ -35,42 +63,17 @@ export default function Portfolio() {
           githubUrl: "https://github.com/Takeshwar06/chat-app-frontend",
           liveUrl: "https://chatcraze.onrender.com",
         },
-        {
-          img: "images/portfolio/grozzoweb.png",
-          githubUrl: "https://github.com/Takeshwar06",
-          liveUrl: "https://grozzo-admin-frontend.vercel.app",
-        },
+
         {
           img: "images/portfolio/ijsrgi.png",
           githubUrl: "https://github.com/Takeshwar06/College-Journal-Web",
           liveUrl: "https://ijsrgi.com",
         },
-        {
-          img: "images/portfolio/mybillingsystem.png",
-          githubUrl: "https://github.com/Takeshwar06/billing-system",
-          liveUrl: "https://billingsystem-seven.vercel.app",
-        },
+
         {
           img: "images/portfolio/skillspark.png",
           githubUrl: "https://github.com/Takeshwar06/projectUniverse-frontend",
           liveUrl: "https://skillspark.onrender.com",
-        },
-        {
-          img: "images/portfolio/smartcanteenweb.png",
-          githubUrl: "https://github.com/Takeshwar06/canteen-web",
-          liveUrl: "https://smartcanteen.onrender.com",
-        },
-        {
-          img: "images/portfolio/smartcanteenapp.png",
-          githubUrl: "https://github.com/Takeshwar06/canteen-native-app",
-          liveUrl: "/apk/smartcanteen.apk",
-          download: true,
-        },
-        {
-          img: "images/portfolio/grozzoapp.png",
-          githubUrl: "https://github.com/Takeshwar06/canteen-web",
-          liveUrl: "/apk/grozzo.apk",
-          download: true,
         },
       ];
       setPortfolio(data);
@@ -92,6 +95,7 @@ export default function Portfolio() {
       //fetch data from backend
       const data = [
         { img: "images/sketch/sketch (10).jpg" },
+        { img: "images/sketch/sketch (19).jpg" },
         { img: "images/sketch/sketch (1).jpg" },
         { img: "images/sketch/sketch (13).jpg" },
         { img: "images/sketch/sketch (11).jpg" },
@@ -133,11 +137,14 @@ export default function Portfolio() {
     } else if (location.pathname === "/certificate") {
       //fetch data from backend
       const data = [
+        { img: "images/certificate/certificate (10).jpg" },
+        { img: "images/certificate/certificate (11).jpg" },
         { img: "images/certificate/certificate (4).jpg" },
         { img: "images/certificate/certificate (2).jpg" },
         { img: "images/certificate/certificate (3).jpg" },
         { img: "images/certificate/certificate (8).jpg" },
         { img: "images/certificate/certificate (1).jpg" },
+        { img: "images/certificate/certificate (12).jpg" },
         { img: "images/certificate/certificate (9).jpg" },
         { img: "images/certificate/certificate (5).jpg" },
         { img: "images/certificate/certificate (6).jpg" },
