@@ -21,6 +21,12 @@ export default function Portfolio() {
           liveUrl: "https://play.google.com/store/apps/details?id=com.myosop",
         },
         {
+          img: "images/portfolio/Petpuja.jpeg",
+          githubUrl: "https://github.com/Takeshwar06/PetPuja",
+          liveUrl: "/apk/PetPuja.apk",
+          download: true,
+        },
+        {
           img: "images/portfolio/grozzoapp.png",
           githubUrl: "https://github.com/Takeshwar06/canteen-web",
           liveUrl: "/apk/grozzo.apk",
