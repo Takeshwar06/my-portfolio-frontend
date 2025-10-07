@@ -15,6 +15,12 @@ export default function Portfolio() {
     if (location.pathname === "/portfolio") {
       // fetch data from backend
       const data = [
+         {
+          img: "images/portfolio/myosop.webp",
+          githubUrl: "https://github.com/Takeshwar06",
+          liveUrl: "https://play.google.com/store/apps/details?id=com.myosop",
+          download: true,
+        },
         {
           img: "images/portfolio/grozzoapp.png",
           githubUrl: "https://github.com/Takeshwar06/canteen-web",
