@@ -41,7 +41,7 @@ export default function Portfolio() {
         {
           img: "images/portfolio/grozzoweb.png",
           githubUrl: "https://github.com/Takeshwar06",
-          liveUrl: "https://grozzo-admin-frontend.vercel.app",
+          liveUrl: "https://grozzo-admin-panel.vercel.app",
         },
 
         {
